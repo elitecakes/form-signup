@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    height: 100vh;
+    overflow: auto;
+    margin: 0;
+}
+
+.left-side {
+    flex: 2;
+    background: no-repeat center/400% url("./Clown\ Fish.jpg");
+    background-position: 10%;
+    position: relative;
+    z-index: 3;
+    
+}
+
+.banner {
+    background-color: black;
+    opacity: 70%;
+    height: 25vh;
+    position: relative;
+    top: 30vh;
+    
+}
+
+.right-side {
+    flex: 3;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    flex: 1;
+    background-color: white;
+    position: relative;
+}
+.top {
+    z-index: 1;
+}
+
+.middle {
+    box-shadow: 0px 5px 40px -20px rgb(182, 182, 182);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.bottom {
+    z-index: 1;
+}
+
+.middleHeading {
+    margin: 0;
+}
+
+
+.infoContainer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5vw;
+    
+
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+.detail-items {
+    display: flex;
+    flex-direction: column;
+}
