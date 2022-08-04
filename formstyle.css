@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+
+:root {
+    --banner-height: 20vh;
+}
+
 body {
     display: flex;
     height: 100vh;
@@ -7,20 +13,35 @@ body {
 
 .left-side {
     flex: 2;
-    background: no-repeat center/400% url("./Clown\ Fish.jpg");
-    background-position: 10%;
+    background: no-repeat center/200% url("./beachandocean.jpg");
+    background-position: 50%;
     position: relative;
     z-index: 3;
-    
+    overflow: hidden;
 }
+
 
 .banner {
     background-color: black;
     opacity: 70%;
-    height: 25vh;
+    height: var(--banner-height);
     position: relative;
-    top: 30vh;
-    
+    top: calc((100vh - (var(--banner-height))) / 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #DDE8F0;
+    font-size: 85px;
+}
+
+.banner-text {
+    color: white;
+    font-size: 50px;
+    opacity: 100%;
+    position: absolute;
+    top: calc((100vh - (var(--banner-height))) / 2);
+    padding: calc((var(--banner-height))/2) 0;
+
 }
 
 .right-side {
@@ -28,32 +49,40 @@ body {
     background-color: lightgrey;
     display: flex;
     flex-direction: column;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 .right {
     flex: 1;
     background-color: white;
     position: relative;
-    padding: 30px
+    padding: 30px;
+    color: #004581;
 }
 .top {
     z-index: 1;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    background-color: #DDE8F0;
+    line-height: 1.5rem;
+    padding-right: 100px;
+    font-size: 18px;
     
 }
 
 .middle {
-    box-shadow: 0px 5px 40px -20px rgb(182, 182, 182);
+    box-shadow: 0px 5px 40px -20px #004581;
     z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
+    background-color: #97cbdc;
 }
 
 .bottom {
     z-index: 1;
+    background-color: #DDE8F0;
+
 }
 
 .middleHeading {
@@ -78,4 +107,43 @@ body {
 .detail-items {
     display: flex;
     flex-direction: column;
+}
+
+.account {
+    background-color: #018ABD;
+    border-style: solid;
+    border-color: #018ABD;
+    font: inherit;
+    border-radius: 5px;
+	cursor: pointer;
+    padding: 10px 40px;
+    color: #DDE8F0;
+	
+}
+
+.account:hover {
+    background-color: #DDE8F0;
+    color: #004581;
+}
+
+a {
+    text-decoration: none;
+    color: #004581;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: #2D8D79;
+}
+
+input {
+  
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+
+input:focus {
+    
 }
